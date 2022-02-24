@@ -32,6 +32,13 @@ const Checkout = () => {
             });
         }
     }
+    
+    const onPurchaseClick = () => {
+        history.push({
+            pathname: `/`
+        });
+        window.location.reload();
+    }
 
     return (
         <section className="booking-layout" data-testid="checkout-summary" style={{ display: "block" }}>
@@ -86,7 +93,7 @@ const Checkout = () => {
                         </div>
                     </div>
                     <div className="confirm-booking-button">
-                        <button data-testid="checkout-back-button">Purchase Tickets</button>
+                        <button data-testid="checkout-back-button" onClick={() => onPurchaseClick()}>Purchase Tickets</button>
                     </div>
                 </div>
 
