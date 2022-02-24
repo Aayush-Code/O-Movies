@@ -59,18 +59,6 @@ const Theater = (props: any) => {
         setBookingData([...bookingData]);
     }
 
-    useEffect(
-        () => {
-            console.log("===> []")
-        }, []
-    );
-
-    useEffect(
-        () => {
-            console.log("===> ")
-        }
-    );
-
     const handleCheckoutClick = () => {
         history.push({
             pathname: `/bookingseats/${moviename}/checkout`,
